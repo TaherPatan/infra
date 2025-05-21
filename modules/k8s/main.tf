@@ -46,7 +46,7 @@ resource "kubernetes_service" "my_app_service" {
     port {
       protocol    = "TCP"
       port        = 8080
-      target_port = 80
+      target_port = 8080
     }
     type = "LoadBalancer"
   }
