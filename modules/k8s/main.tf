@@ -10,7 +10,7 @@ resource "kubernetes_deployment" "my_app" {
     name = "my-app"
   }
   spec {
-    replicas = 1
+    replicas = 2
     selector {
       match_labels = {
         app = "my-app"
