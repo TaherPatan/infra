@@ -5,7 +5,7 @@ provider "aws" {
 
 module "eks" {
   source       = "./modules/eks"
-  cluster_name = "my-cluster"
+  cluster_name = "prod-cluster"
   subnet_ids   = ["subnet-2a54cd66", "subnet-d5d477ae", "subnet-d288a0ba"]
 }
 
