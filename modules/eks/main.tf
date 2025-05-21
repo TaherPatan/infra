@@ -28,6 +28,7 @@ resource "aws_iam_role_policy_attachment" "eks_policy" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
 }
 
+# IAM role for the EKS worker nodes.
 resource "aws_iam_role" "eks_nodes_role" {
   name               = "eks-node-role"
   assume_role_policy = jsonencode({
