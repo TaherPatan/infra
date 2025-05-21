@@ -7,6 +7,7 @@ resource "aws_eks_cluster" "my_cluster" {
   }
 }
 
+# IAM role for the EKS cluster itself.
 resource "aws_iam_role" "eks_role" {
   name = "eks-cluster-role"
 
