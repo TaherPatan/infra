@@ -1,3 +1,4 @@
+# This module deploys a Kubernetes application to an EKS cluster.
 provider "kubernetes" {
   host                   = var.eks_cluster_endpoint
   token                  = var.eks_cluster_auth_token
