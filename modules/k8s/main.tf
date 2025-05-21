@@ -36,6 +36,7 @@ resource "kubernetes_deployment" "my_app" {
   }
 }
 
+# Defines the Kubernetes service to expose the application.
 resource "kubernetes_service" "my_app_service" {
   metadata {
     name = "my-app-service"
