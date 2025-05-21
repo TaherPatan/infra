@@ -1,2 +1,5 @@
-variable "cluster_name" { type = string }
+variable "cluster_name" {
+  description = "The name of the EKS cluster."
+  type        = string
+}
 variable "subnet_ids" { type = list(string) }
