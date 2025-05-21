@@ -1,3 +1,4 @@
+# This Terraform configuration sets up an EKS cluster and deploys a Kubernetes application.
 provider "aws" {
   region = "ap-south-1"
 }
