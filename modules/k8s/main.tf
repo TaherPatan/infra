@@ -5,6 +5,7 @@ provider "kubernetes" {
   cluster_ca_certificate = base64decode(var.eks_cluster_ca_cert)
 }
 
+# Defines the Kubernetes deployment for the application.
 resource "kubernetes_deployment" "my_app" {
   metadata {
     name = "my-app"
